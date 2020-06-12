@@ -1,0 +1,32 @@
+#include <windows.h>
+
+IDI_ICON1 ICON DISCARDABLE "images/windisk.ico"
+
+VS_VERSION_INFO     VERSIONINFO
+FILEVERSION         VERSION_RC
+PRODUCTVERSION      VERSION_RC
+FILEFLAGSMASK       0x3fL
+FILEFLAGS           0
+FILEOS              VOS_NT_WINDOWS32
+FILETYPE            VFT_APP
+FILESUBTYPE         VFT2_UNKNOWN
+BEGIN
+    BLOCK   "VarFileInfo"
+    BEGIN
+        VALUE   "Translation",  0x409,  1200
+    END
+    BLOCK   "StringFileInfo"
+    BEGIN
+        BLOCK   "040904b0"
+        BEGIN
+            VALUE   "CompanyName",      "Applikon Biotechnology B.V.\0"
+            VALUE   "FileDescription",  "WinDisk Image Creator\0"
+            VALUE   "FileVersion",      VERSION_NUMBER "\0"
+            VALUE   "InternalName",     "WinDisk\0"
+            VALUE   "LegalCopyright",   "Copyright 2019 Applikon Biotechnology B.V.\0"
+            VALUE   "OriginalFilename", "windisk.exe\0"
+            VALUE   "ProductName",      "WinDisk\0"
+            VALUE   "ProductVersion",   VERSION_NUMBER "\0"
+        END
+    END
+END
